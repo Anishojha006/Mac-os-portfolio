@@ -9,23 +9,23 @@ const Gitcard = ({ data = { id: 1, image: "", title: "", description: "", tags: 
         <p className='description'>{data.description}</p>
 
         <div className="tags">
-            {data.tags.map((tag,index)=>{
-                return <p key={index} className='tag'>{tag}</p>
+            {data.tags.map((tag, index) => {
+                return <p key={`tag-${index}`} className='tag'>{tag}</p>
             })}
         </div>
 
         <div className="urls">
             <a href={data.repoLink}>Repository</a>
-            {data.demoLink &&    <a href={data.demoLink}>Demo link</a>}
+            {data.demoLink && <a href={data.demoLink}>Demo link</a>}
         </div>
     </div>
 }
-const Github = () => {
+const Github = ({ windowName, windowState, setwindowsState }) => {
     return (
-        <MacWindow>
+        <MacWindow windowName={windowName} windowState={windowState} setwindowsState={setwindowsState} >
             <div className="cards">
-                {githubData.map((project) => {
-                    return <Gitcard data={project}/>
+                {githubData.map((project) =>{
+                    return <Gitcard key={project.id} data={project} />
                 })}
             </div>
         </MacWindow>

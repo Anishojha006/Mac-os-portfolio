@@ -2,11 +2,11 @@ import React from 'react'
 import MacWindow from './windows/MacWindow'
 import "./resume.scss"
 
-const Resume = () => {
+const Resume = ({windowName, windowState, setwindowsState}) => {
   return (
-    <MacWindow>
+    <MacWindow windowName={windowName} windowState={windowState} setwindowsState={setwindowsState}>
         <div className="resume-window">
-            <embed src="/resume.pdf" frameborder="0" ></embed>
+            <embed src="/resume.pdf" frameBorder="0" ></embed>
         </div>
     </MacWindow>
   )

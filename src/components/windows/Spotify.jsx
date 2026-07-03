@@ -2,9 +2,9 @@ import React from "react";
 import MacWindow from "./MacWindow";
 import "./spotify.scss"
 
-const Spotify = () => {
+const Spotify = ({windowName, windowState, setwindowsState}) => {
   return (
-    <MacWindow width="max(25vw)">
+    <MacWindow windowName={windowName} windowState={windowState} setwindowsState={setwindowsState} width="max(25vw)">
       <div className="spotify-window">
         <iframe
           data-testid="embed-iframe"
@@ -14,7 +14,6 @@ const Spotify = () => {
           style={{ borderRadius: "12px" }}
           frameBorder="0"
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          allowFullScreen
           loading="lazy"
           title="Spotify Artist"
         ></iframe>
