@@ -27,7 +27,11 @@ const Dock = ({ windowsState, setwindowsState }) => {
                 <img src="/doc-icons/pdf.svg" alt="" />
             </div>
 
-            <div className="icon calender">
+            <div className="icon calender"
+                onClick={() => {
+                    window.open("https://calendar.google.com/", "_blank");
+                }}
+            >
                 <img src="/doc-icons/calender.svg" alt="" />
             </div>
 
@@ -38,11 +42,23 @@ const Dock = ({ windowsState, setwindowsState }) => {
             }}>
                 <img src="/doc-icons/spotify.svg" alt="" />
             </div>
-            <div className="icon mail">
-                <img src="/doc-icons/mail.svg" alt="" />
+            <div
+                className="icon mail"
+                onClick={() => {
+                    window.open(
+                        "https://mail.google.com/mail/?view=cm&fs=1&to=anishojha1512@gmail.com",
+                        "_blank"
+                    );
+                }}
+            >
+                <img src="/doc-icons/mail.svg" alt="Mail" />
             </div>
+            <div className="icon link"
+                onClick={() => {
+                    window.open("https://www.linkedin.com/in/anish-ojha-42a746296", "_blank");
 
-            <div className="icon link">
+                }}
+            >
                 <img src="/doc-icons/link.svg" alt="" />
             </div>
             <div className="icon cli" onClick={() => {

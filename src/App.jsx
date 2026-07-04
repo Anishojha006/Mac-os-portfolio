@@ -7,6 +7,7 @@ import Note from './components/Note'
 import Resume from './components/Resume'
 import Spotify from './components/windows/Spotify'
 import Cli from './components/windows/Cli'
+import Folder from './components/folders/Folder.jsx'
 const App = () => {
   const [windowsState, setwindowsState] = useState({
     github: false,
@@ -18,7 +19,8 @@ const App = () => {
 
   return (
     <main>
-      <Nav/>
+      <Nav windowsState={windowsState} setwindowsState={setwindowsState}  />
+      <Folder/>
       <Dock windowsState={windowsState} setwindowsState={setwindowsState} />
       {windowsState.github && <Github windowName="github" windowState={windowsState} setwindowsState={setwindowsState} />}
       {windowsState.note && <Note windowName="note" windowState={windowsState} setwindowsState={setwindowsState} />}
