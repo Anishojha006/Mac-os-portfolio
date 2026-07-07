@@ -16,7 +16,11 @@ const Nav = ({  setwindowsState }) => {
             }} >
                     <p>Anish Ojha</p>
                 </div>
-                <div className="nav-item">
+                <div className="nav-item"  onClick={() => {
+                setwindowsState((previous) => ({
+                    ...previous, resume: !previous.resume
+                }))
+            }}>
                     <p>File</p>
                 </div>
                 <div className="nav-item"  onClick={()=>{

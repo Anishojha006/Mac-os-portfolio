@@ -1,10 +1,16 @@
 import React from 'react'
 import "./folder.scss"
 
-const folder = () => {
+const folder = ({ windowsState, setwindowsState }) => {
   return (
     <div className='folder'>
-        <div className='folder-continer'>
+        <div className='folder-continer'
+         onClick={() => {
+                    setwindowsState((previous) => (
+                        { ...previous, Liveprojects: !previous.Liveprojects }
+                    ))
+                }}
+        >
          <img src="public/archive_3804719.png" />
            <h3>Projects</h3>
         </div>
@@ -17,26 +23,6 @@ const folder = () => {
          <div className='folder-continer'>
          <img src="public/archive_3804719.png" />
            <h3>Like</h3>
-        </div>
-
-         <div className='folder-continer'>
-         <img src="public/archive_3804719.png" />
-           <h3>Sun down wbsite</h3>
-        </div>
-
-         <div className='folder-continer'>
-         <img src="public/archive_3804719.png" />
-           <h3>Sun down wbsite</h3>
-        </div>
-
-         <div className='folder-continer'>
-         <img src="public/archive_3804719.png" />
-           <h3>Sun down wbsite</h3>
-        </div>
-
-         <div className='folder-continer'>
-         <img src="public/archive_3804719.png" />
-           <h3>Sun down wbsite</h3>
         </div>
     </div>
   )
