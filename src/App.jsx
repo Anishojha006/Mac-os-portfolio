@@ -18,7 +18,7 @@ const App = () => {
     spotify: false,
     cli: false,
     Liveprojects: false,
-    Comments:false
+    Comments:true 
   })
 
   return (
@@ -32,7 +32,7 @@ const App = () => {
       {windowsState.resume && <Resume windowName="resume" windowState={windowsState} setwindowsState={setwindowsState} />}
       {windowsState.spotify && <Spotify windowName="spotify" windowState={windowsState} setwindowsState={setwindowsState} />}
       {windowsState.cli && <Cli windowName="cli" windowState={windowsState} setwindowsState={setwindowsState} />}
-      {windowsState.Comments && <Comments/>}
+      {windowsState.Comments && <Comments windowsState={windowsState} setwindowsState={setwindowsState}/>}
     </main>
   )
 }
