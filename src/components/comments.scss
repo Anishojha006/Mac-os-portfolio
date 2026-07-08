@@ -8,6 +8,8 @@
     height: 100%;
     width: 100%;
     background: linear-gradient(to right,blue,rgb(99, 92, 239));
+    overflow: scroll;
+    align-items: center;
     
     h1{
 
@@ -26,21 +28,31 @@
 
     button{
 
-        width: 5vw;
+        width: 8vw;
         margin-left: auto;
         margin-right: auto;
         color: rgb(68, 254, 68);
         background: transparent;
         border:2px solid  rgb(68, 254, 68);
         border-radius: 0.4vw;
-        font-size: 1.6vw;
-        padding: 1vw 0vw;
-        padding-left: 4vw;
-        padding-right: 8vw;
-
+        font-size: 1.2vw;
+        padding: 0.6vw 0vw;
+        margin-top: 2vw;
     }
 
     input{
-        
+        width: 80%;
+        border:none;
+        background-color: transparent;
+        border-bottom: 2px solid rgb(28, 244, 57);
+        font-size: 1.6vw;
+        color: white;
+        outline: none;
+        padding-block: 0.6vw;
+    }
+    
+    input:hover{
+        border-bottom: 2px solid rgb(28, 244, 57);
+        outline: 2px solid ;
     }
 }
