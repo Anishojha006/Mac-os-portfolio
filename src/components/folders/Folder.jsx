@@ -28,7 +28,7 @@ const folder = ({ windowsState, setwindowsState }) => {
 
          <div className='folder-continer'>
          <img src="public/archive_3804719.png" />
-           <h3>Like</h3>
+           <h3>Reviews</h3>
         </div>
     </div>
   )

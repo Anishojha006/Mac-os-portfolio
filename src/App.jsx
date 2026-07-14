@@ -14,6 +14,7 @@ import Folder from "./components/folders/Folder";
 import Liveprojects from "./components/Liveprojects";
 import AddComments from "./components/AddComments";
 import SubmittedWindow from "./components/SubmittedWindow";
+import Reviews from "./components/Reviews";
 
 const App = () => {
   const [windowsState, setwindowsState] = useState({
@@ -24,7 +25,8 @@ const App = () => {
     cli: false,
     Liveprojects: false,
     AddComments: false,
-    submit:false
+    submit:false,
+    Reviews:true
   });
 
   return (
@@ -112,6 +114,8 @@ const App = () => {
               
               />
             }
+
+            {windowsState.Reviews &&<Reviews/>}
           </main>
         }
       />
