@@ -15,9 +15,15 @@ const folder = ({ windowsState, setwindowsState }) => {
            <h3>Projects</h3>
         </div>
 
-         <div className='folder-continer'>
+         <div className='folder-continer' 
+            onClick={() => {
+                    setwindowsState((previous) => (
+                        { ...previous, AddComments: !previous.AddComments }
+                    ))
+                }}
+         >
          <img src="public/archive_3804719.png" />
-           <h3>Comments</h3>
+           <h3>Add Comments</h3>
         </div>
 
          <div className='folder-continer'>
