@@ -4,9 +4,11 @@
     padding-bottom: 3rem;
     overflow: auto;
     background-color: #222222;
+    font-family: monospace;
     
     div[name="react-console-emulator"]{
         height: 100%;
         background-color: transparent !important;
+        font-family: monospace;
     }
 }

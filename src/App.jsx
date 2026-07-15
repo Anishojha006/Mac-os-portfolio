@@ -26,7 +26,7 @@ const App = () => {
     Liveprojects: false,
     AddComments: false,
     submit:false,
-    Reviews:true
+    Reviews:false
   });
 
   return (
@@ -115,7 +115,13 @@ const App = () => {
               />
             }
 
-            {windowsState.Reviews &&<Reviews/>}
+            {windowsState.Reviews &&<Reviews
+            
+                  windowName="Reviews"
+                windowState={windowsState}
+                setwindowsState={setwindowsState}
+            
+            /> }
           </main>
         }
       />

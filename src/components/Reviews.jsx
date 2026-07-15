@@ -2,30 +2,59 @@ import React from 'react'
 import MacWindow from './windows/MacWindow'
 import "./review.scss"
 
-const Reviews = () => {
+const Reviews = ({ windowName, windowState, setwindowsState }) => {
   return (
-    <MacWindow>
+    <MacWindow windowName={windowName} windowState={windowState} setwindowsState={setwindowsState}>
       <div className='reviews'>
-        <p>What a wonderful website, loved it!</p>
-        <p>Amazing design and smooth navigation.</p>
-        <p>Really enjoyed browsing through the pages.</p>
-        <p>Such a creative and engaging layout!</p>
-        <p>Everything feels so polished and professional.</p>
-        <p>The user experience is top-notch.</p>
-        <p>Beautifully crafted interface, very intuitive.</p>
-        <p>Great attention to detail throughout.</p>
-        <p>Refreshing and modern look, well done!</p>
-        <p>Easy to use and very responsive.</p>
-        <p>Absolutely stunning visuals and flow.</p>
-        <p>Feels elegant and thoughtfully designed.</p>
-        <p>Navigation is seamless and enjoyable.</p>
-        <p>Love the simplicity and clarity here.</p>
-        <p>One of the best websites I’ve seen!</p>
-        <p>Clean design and excellent usability.</p>
-        <p>Very impressive work, hats off!</p>
-        <p>It’s both functional and aesthetically pleasing.</p>
-        <p>Browsing here was a delightful experience.</p>
-        <p>Truly a masterpiece of web design!</p>
+        <div className="comment-review">
+          <h2>What a wonderful website, loved it!</h2>
+          <p>- <span>Avanish Kumar Sharma</span></p>
+        </div>
+
+        <div className="comment-review">
+          <h2>The design is clean and the animations are incredibly smooth.</h2>
+          <p>- <span>Rahul Verma</span></p>
+        </div>
+
+        <div className="comment-review">
+          <h2>Your portfolio looks very professional. Great job!</h2>
+          <p>- <span>Priya Singh</span></p>
+        </div>
+
+        <div className="comment-review">
+          <h2>Loved the macOS-inspired interface. It feels unique and modern.</h2>
+          <p>- <span>Aman Gupta</span></p>
+        </div>
+
+        <div className="comment-review">
+          <h2>Everything works perfectly. I had a wonderful browsing experience.</h2>
+          <p>- <span>Sneha Patel</span></p>
+        </div>
+
+        <div className="comment-review">
+          <h2>Excellent work! Your attention to detail really stands out.</h2>
+          <p>- <span>Rohan Mishra</span></p>
+        </div>
+
+        <div className="comment-review">
+          <h2>This is one of the best portfolio websites I've seen recently.</h2>
+          <p>- <span>Anjali Sharma</span></p>
+        </div>
+
+        <div className="comment-review">
+          <h2>The responsiveness and UI are absolutely fantastic.</h2>
+          <p>- <span>Aditya Kumar</span></p>
+        </div>
+
+        <div className="comment-review">
+          <h2>Very creative project. It showcases your frontend skills beautifully.</h2>
+          <p>- <span>Neha Yadav</span></p>
+        </div>
+
+        <div className="comment-review">
+          <h2>Keep building amazing projects like this. Best of luck!</h2>
+          <p>- <span>Vivek Tiwari</span></p>
+        </div>
       </div>
     </MacWindow>
   )

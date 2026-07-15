@@ -3,14 +3,30 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;   
-  align-items: flex-start;       
-  overflow-y: auto;            
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-y: auto;
   padding: 2vw;
   gap: 2vw;
+  padding-bottom: 5vw;
+  .comment-review {
+    background: linear-gradient(to bottom,rgb(70, 70, 237),blue);
+    padding: 2vw;
+    width: 100%;
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
 
-  p {
-    font-size: 1.5vw;
-    text-align: left;
+    h2{
+      font-size: clamp(15px,2vw,55px);
+      font-weight: 500;
+    }
+
+    p{
+      font-size: clamp(5px, 1vw, 24px);
+      
+    }
+
   }
 }
