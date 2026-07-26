@@ -1,0 +1,11 @@
+require("dotenv").config();
+const app = require("./src/app.js");
+const ConnectingToDatabase =  require("./src/config/database.js");
+const dns = require("dns");
+dns.setServers(["8.8.8.8","8.8.8.4"]);
+
+ConnectingToDatabase();
+
+app.listen(3000,()=>{
+    console.log("App is live on 3000 port");
+})
