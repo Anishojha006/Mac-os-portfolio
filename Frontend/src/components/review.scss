@@ -1,3 +1,27 @@
+.loading{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
+  /* HTML: <div class="loader"></div> */
+  
+  /* HTML: <div class="loader"></div> */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vw;
+  width: 60px;
+  aspect-ratio: 4;
+  background: radial-gradient(circle closest-side,white 90%,black) 0/calc(100%/3) 100% space;
+  clip-path: inset(0 100% 0 0);
+  animation: l1 1s steps(4) infinite;
+}
+@keyframes l1 {to{clip-path: inset(0 -34% 0 0)}}
+}
+
 .reviews {
   height: 100%;
   width: 100%;

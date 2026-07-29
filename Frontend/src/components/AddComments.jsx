@@ -30,7 +30,7 @@ const AddComments = ({ windowName, windowState, setwindowsState }) => {
 
           e.preventDefault();
           try {
-            const res = await axios.post("http://localhost:3000/createComment", {
+            const res = await axios.post("http://localhost:3000/api/createComment", {
               name: inputName,
               comment: inputMessage,
             });
