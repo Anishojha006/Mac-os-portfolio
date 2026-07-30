@@ -10,6 +10,7 @@ const AddComments = ({ windowName, windowState, setwindowsState }) => {
 
   const [inputName, setinputName] = useState("");
   const [inputMessage, setinputMessage] = useState("");
+  const [disable, setdisable] = useState(false);
 
   const nameHandler = (e) => {
     setinputName(e.target.value)
@@ -48,12 +49,13 @@ const AddComments = ({ windowName, windowState, setwindowsState }) => {
           catch (err) {
             console.log(err.message);
           }
+          setdisable(true);
 
         }}>
-          <input required type="text" value={inputName} placeholder='Name' onChange={nameHandler} />
-          <input required type="text" value={inputMessage} placeholder='Message' onChange={messageHandler} />
+          <input required type="text" value={inputName} placeholder='Name' onChange={nameHandler} disable={disable} />
+          <input required type="text" value={inputMessage} placeholder='Message' onChange={messageHandler} disable={disable}  />
 
-          <button type='submit' >
+          <button type='submit' disable={disable}  >
             <span>Send</span>
           </button>
         </form>
@@ -64,3 +66,4 @@ const AddComments = ({ windowName, windowState, setwindowsState }) => {
 }
 
 export default AddComments
+

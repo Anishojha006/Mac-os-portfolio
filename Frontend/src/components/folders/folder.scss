@@ -34,3 +34,18 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+   .folder{
+    display: block;
+
+    .folder-continer{
+      img{
+        width: 12vw;
+      }
+      h3{
+        font-size: 3vw;
+      }
+    }
+   }
+}

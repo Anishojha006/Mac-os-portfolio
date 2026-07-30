@@ -15,6 +15,8 @@ import Liveprojects from "./components/Liveprojects";
 import AddComments from "./components/AddComments";
 import SubmittedWindow from "./components/SubmittedWindow";
 import Reviews from "./components/Reviews";
+import AnalogClock from "./components/AnalogClock";
+
 
 const App = () => {
   const [windowsState, setwindowsState] = useState({
@@ -36,6 +38,8 @@ const App = () => {
         path="/"
         element={
           <main>
+        <AnalogClock/>
+
             <Nav
               windowsState={windowsState}
               setwindowsState={setwindowsState}

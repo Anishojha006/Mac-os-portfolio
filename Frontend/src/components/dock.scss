@@ -73,3 +73,16 @@
         transform: scale(1.1) translateY(-10%);
     }
 }
+
+@media (max-width:768px){
+.dock{
+    .icon{
+            width: 8vw;
+            height: 12vw;
+    }
+    img{
+        height: 6vw;
+    }
+}
+
+}
