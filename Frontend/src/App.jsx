@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./app.scss";
 
 import { Routes, Route } from "react-router-dom";
@@ -31,8 +31,10 @@ const App = () => {
     Reviews:false
   });
 
+ 
+
   return (
-    <Routes>
+     <Routes>
       {/* Home Page */}
       <Route
         path="/"

@@ -16,8 +16,8 @@
         position: absolute;
           width: 100%;
         height: 100%;
-        z-index: 0;
-        
+        z-index: 2;
+        // background-color: black;
     }
 
     .nav {
@@ -35,10 +35,9 @@
             display: flex;
             gap: 0.25rem;
 
-            .dot {
-
-                height: 10vw;
-                width: 10vw;
+            .dot{
+                height: 1.2vw;
+                width: 1.2vw;
                 background-color: white;
                 border-radius: 50%;
                 cursor: pointer;
@@ -78,5 +77,19 @@
     *::-webkit-scrollbar-thumb{
       background-color: rgba(168,168,168,0.4);
       border-radius: 4px;
+    }
+}
+
+// media queries for mobile display
+@media (max-width: 768px) {
+    .window {
+        .nav {
+            .dots {
+                .dot{
+                    width: 4vw;
+                    height: 4vw;
+                }
+            }
+        }
     }
 }

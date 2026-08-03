@@ -1,7 +1,7 @@
 .dock{
 
     display: flex;
-    gap: 0.75rem;
+    gap: 0.4rem;
     position: absolute;
     bottom: 1rem;
     left: 50%;
@@ -77,11 +77,11 @@
 @media (max-width:768px){
 .dock{
     .icon{
-            width: 8vw;
-            height: 12vw;
+            width: 11vw;
+            height: 13vw;
     }
     img{
-        height: 6vw;
+        height: 7vw;
     }
 }
 
