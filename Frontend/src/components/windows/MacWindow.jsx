@@ -15,8 +15,8 @@ const MacWindow = ({
   });
 
   const [position, setPosition] = useState({
-    x: (window.innerWidth - window.innerWidth * 0.4) / 2,
-    y: (window.innerHeight - window.innerHeight * 0.6) / 2,
+    x: (window.innerWidth - window.innerWidth * 0.6) / 2,
+    y: (window.innerHeight - window.innerHeight * 0.8) / 2,
   });
 
   const sizeHandler = () => {
@@ -74,8 +74,9 @@ const MacWindow = ({
       minWidth={300}
       minHeight={200}
       bounds="window"
-    >
-      <div className="window">
+    > 
+    <div className="window ">
+    <div className="handle"></div>
         <div className="nav">
           <div className="dots">
             {/* Close Button */}
@@ -109,6 +110,8 @@ const MacWindow = ({
 
         <div className="main-content">{children}</div>
       </div>
+
+      
     </Rnd>
   );
 };
