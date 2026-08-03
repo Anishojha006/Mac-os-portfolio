@@ -11,7 +11,7 @@ const folder = ({ windowsState, setwindowsState }) => {
                     ))
                 }}
         >
-         <img src="public/archive_3804719.png" />
+         <img src="/navbar-icon/folder.png" />
            <h3>Projects</h3>
         </div>
 
@@ -22,7 +22,7 @@ const folder = ({ windowsState, setwindowsState }) => {
                     ))
                 }}
          >
-         <img src="public/archive_3804719.png" />
+         <img src="/navbar-icon/folder.png" />
            <h3>Add Comments</h3>
         </div>
 
@@ -33,7 +33,9 @@ const folder = ({ windowsState, setwindowsState }) => {
                     ))
                 }}
          >
-         <img src="public/archive_3804719.png" />
+         <img src='/navbar-icon/folder.png' />
+         
+         
            <h3>Reviews</h3>
         </div>
     </div>

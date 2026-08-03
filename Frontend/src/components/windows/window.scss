@@ -19,6 +19,7 @@
         align-items: center;
         border-bottom: 1px solid rgba(245,245,245,0.24);
 
+
         .dots {
 
             display: flex;
@@ -26,12 +27,15 @@
 
             .dot {
 
-                height: 15px;
-                width: 15px;
+                height: 10vw;
+                width: 10vw;
                 background-color: white;
                 border-radius: 50%;
                 cursor: pointer;
-                
+                z-index: 200;
+              
+                 
+
             }
 
             .red{

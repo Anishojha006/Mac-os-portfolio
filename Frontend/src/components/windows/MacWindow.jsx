@@ -45,6 +45,13 @@ const MacWindow = ({
 
   return (
     <Rnd
+      enableUserSelectHack={false} 
+      dragHandleClassName="handle"
+     onDragStop={(e, data) => console.log('Drag stopped', data)}
+    onResize={(e, direction, ref, delta, position)=>{
+      console.log("Resize stopped",position);
+    }}
+
       size={{
         width: windowDimension.width,
         height: windowDimension.height,
@@ -74,7 +81,11 @@ const MacWindow = ({
             {/* Close Button */}
             <div
               className="dot red"
-              onClick={() => {
+             
+              onClick={(e) => {
+              
+                console.log("clicked on red button")
+
                 if (setwindowsState && windowName) {
                   setwindowsState((prev) => ({
                     ...prev,
